@@ -2,25 +2,67 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "link",
+            "title": "Bitlink"
+        },
+        {
+            "id": "title",
+            "title": "Title"
+        },
+        {
+            "id": "note",
+            "title": "Note"
+        },
+        {
+            "id": "private",
+            "title": "Private?"
+        },
+        {
+            "id": "user_ts",
+            "title": "Timestamp"
+        },
+        {
+            "id": "archived",
+            "title": "Archive?"
+        },
+        {
+            "id": "edit",
+            "title": "Edit"
+        },
+        {
+            "id": "clear_deeplinks",
+            "title": "Clear Deeplinks?"
+        },
+        {
+            "id": "deeplinks",
+            "title": "json array of deeplink items"
         }
-        */
     ],
-    //Required. Outputs the module emits.
+
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "new_hash",
+            "title": "New Hash"
+        },
+        {
+            "id": "url",
+            "title": "Bitlink"
+        },
+        {
+            "id": "hash",
+            "title": "Hash"
+        },
+        {
+            "id": "global_hash",
+            "title": "Bitly ID"
+        },
+        {
+            "id": "long_url",
+            "title": "Original URL"
         }
-      */
     ],
-    "title": "Bitly: Edit Link Meta" /* Required.A display name for the module */
+    "icon": "dex-bitly",
+    "title": "Bitly: Edit Link Meta"
 }
