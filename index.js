@@ -37,7 +37,7 @@ module.exports = {
             return this.fail(validateErrors);
 
         inputs.access_token = token;
-        request.get({uri: api, qs: _.merge(inputs, {access_token: token}), json: true}, function (error, response, body) {
+        request.get({uri: api, qs: inputs, json: true}, function (error, response, body) {
             if (error)
                 this.fail(error);
             else if (body && body.status_code !== 200)
